@@ -3,15 +3,18 @@
 }
 
 html {
-  padding: 0;
-  margin: 0;
+  height: 100%;
+  background: black;
+  background: linear-gradient(0deg, black 0%, #4a0b11 60%, #992b2b 91%);
+  background-attachment: fixed;
 }
 
 body {
-  background-color: #3A4257;
-  height: 100vh;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
   font-size: 12pt;
-  font-family: "Abril Fatface", cursive;
+  color: white;
 }
 
 main {
@@ -19,14 +22,16 @@ main {
 }
 
 .wrapper {
+  border-radius: 12px;
   padding-top: 20px;
   width: 90%;
   margin: 0 auto;
-  background-color: #e8dbc7;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 h1 {
+  font-family: "Abril Fatface", cursive;
+  color: white;
   padding: 0px;
   margin: 0px 0px 10px;
   text-align: center;
@@ -34,8 +39,8 @@ h1 {
 }
 
 h3 {
-  font-size: 2rem;
-  padding: 0;
+  font-size: 1.5rem;
+  padding: 20px 0px 0px;
   margin: 0;
   text-align: center;
 }
@@ -47,6 +52,7 @@ h3 {
 }
 
 input {
+  font-family: "Montserrat", sans-serif;
   margin: 0 auto;
   padding: 10px;
   width: 90%;
@@ -54,20 +60,21 @@ input {
 }
 
 button {
+  font-family: "Montserrat", sans-serif;
   padding: 10px 25px;
   border-radius: 10px;
   margin: 10px auto;
   cursor: pointer;
-  background-color: #3A4257;
+  background-color: #180101;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border: none;
   color: white;
   font-size: 1.1rem;
-  font-family: "Abril Fatface", cursive;
-  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 button:hover {
-  background-color: #505b75;
+  background-color: #721405;
 }
 
 #result {
@@ -75,9 +82,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e8dbc7;
   margin-top: 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .movie-container {
@@ -93,10 +98,13 @@ img {
   width: 100%;
   height: auto;
 }
+img:hover {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 768px) {
   .wrapper {
-    width: 60%;
+    width: 80%;
     padding: 30px;
   }
 
@@ -123,6 +131,7 @@ img {
   .search-field {
     flex-direction: row;
     margin: 30px 0px;
+    font-family: "Montserrat", sans-serif;
   }
 
   button {
