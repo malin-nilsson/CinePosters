@@ -4,15 +4,12 @@
 
 html {
   height: 100%;
-  background: black;
-  background: linear-gradient(0deg, black 0%, #4a0b11 60%, #992b2b 91%);
-  background-attachment: fixed;
+  background: #141414;
 }
 
 body {
   padding: 0;
   margin: 0;
-  min-height: 100%;
   font-size: 12pt;
   color: white;
 }
@@ -26,6 +23,7 @@ main {
   padding-top: 20px;
   width: 90%;
   margin: 0 auto;
+  background: #1c1b1b;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -36,6 +34,9 @@ h1 {
   margin: 0px 0px 10px;
   text-align: center;
   font-size: 2rem;
+}
+h1 .fa-film {
+  margin-left: 10px;
 }
 
 h3 {
@@ -58,6 +59,10 @@ input {
   width: 90%;
   border-radius: 4px;
 }
+input:focus {
+  outline: none;
+  border: 2px solid #7d3ea4;
+}
 
 button {
   font-family: "Montserrat", sans-serif;
@@ -65,7 +70,7 @@ button {
   border-radius: 10px;
   margin: 10px auto;
   cursor: pointer;
-  background-color: #180101;
+  background-color: #7d3ea4;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border: none;
   color: white;
@@ -74,7 +79,7 @@ button {
   letter-spacing: 1.5px;
 }
 button:hover {
-  background-color: #721405;
+  background-color: #653583;
 }
 
 #result {
@@ -83,6 +88,9 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  border-radius: 12px;
+  background: #1c1b1b;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .movie-container {
@@ -100,6 +108,7 @@ img {
 }
 img:hover {
   cursor: pointer;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,7 +134,7 @@ img:hover {
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-    margin: 10px auto;
+    margin: 30px auto;
   }
 
   .search-field {
