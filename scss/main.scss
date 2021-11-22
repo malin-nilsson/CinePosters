@@ -32,7 +32,6 @@ h1 {
     color: white;
     padding: 0px;
     margin: 0px 0px 10px;
-    text-align: center;
     font-size: 2rem;
 
     .fa-film {
@@ -44,7 +43,6 @@ h3 {
     font-size: 1.5rem;
     padding: 20px 0px 0px;
     margin: 0;
-    text-align: center;
 }
 
 .search-field {
@@ -62,7 +60,7 @@ input {
 
     &:focus {
         outline: none;
-        border: 2px solid rgb(125, 62, 164);
+        border: 2px solid rgb(157, 157, 157);
     }
 }
 
@@ -72,16 +70,17 @@ button {
     border-radius: 10px;
     margin: 10px auto;
     cursor: pointer;
-    background-color: rgb(125, 62, 164);
+    background-color: rgb(182, 182, 182);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: none;
-    color: white;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 900;
     letter-spacing: 1.5px;
+    transition: background-color 0.2s ease-out;
     
     &:hover {
-    background-color: rgb(101, 53, 131);
+    background-color: rgb(55, 55, 55);
+    color: white;
     }
 }
 
@@ -100,7 +99,6 @@ button {
 .movie-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 90%;
     height: 100%;
     margin: 10px 0px;
@@ -141,19 +139,22 @@ img {
         flex-wrap: wrap;
         width: 80%;
         margin: 30px auto;
+        align-items: flex-start;
     }
 
     .search-field {
         flex-direction: row;
         margin: 30px 0px;
         font-family: 'Montserrat', sans-serif;
-    }
+  
 
     button {
         margin: 0 10px;
     }
+}
 
     h1 {
         font-size: 3rem;
+        text-align: center;
     }
 }
