@@ -21,22 +21,35 @@ function doSearch() {
             var img = document.createElement("img");
             var heading = document.createElement("h3");
             var year = document.createElement("span");
+            var button = document.createElement("button");
             img.src = movie.Poster;
             heading.innerHTML = movie.Title;
             year.toString();
             year.innerHTML = movie.Year.toString();
+            button.innerHTML = "Plot";
             var container = document.createElement("div");
-            container.addEventListener("click", function () {
+            img.addEventListener("click", function () {
                 handleMovieClick(movie.imdbID);
             });
             container.classList.add("movie-container");
             container.appendChild(img);
             container.appendChild(heading);
             container.appendChild(year);
+            container.appendChild(button);
+            button.addEventListener("click", function () {
+                fetch("http://www.omdbapi.com/?i=" + movie.imdbID + "&apikey=416ed51a")
+                    .then(function (response) { return response.json(); })
+                    .then(function (result) {
+                    var paragraph = document.createElement("p");
+                    paragraph.innerHTML = result.Plot;
+                    paragraph.classList.add("plot");
+                    container.appendChild(paragraph);
+                    button.disabled = true;
+                });
+            });
             document.getElementById("result").appendChild(container);
             return new Movie(movie.Poster, movie.Title, movie.Year, movie.imdbID);
         });
-        console.log(movies);
     });
 }
 function handleMovieClick(imdbid) {

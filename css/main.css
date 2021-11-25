@@ -90,6 +90,7 @@ button:hover {
   border-radius: 12px;
   background: #1c1b1b;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .movie-container {
@@ -99,6 +100,10 @@ button:hover {
   height: 100%;
   margin: 10px 0px;
 }
+.movie-container button {
+  margin: 20px 0px 0px;
+  width: 30%;
+}
 
 img {
   width: 100%;
@@ -107,6 +112,11 @@ img {
 img:hover {
   cursor: pointer;
   opacity: 0.7;
+}
+
+.plot {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 @media screen and (min-width: 768px) {

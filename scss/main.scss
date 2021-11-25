@@ -23,7 +23,7 @@ main {
     padding-top: 20px;
     width: 90%;
     margin: 0 auto;
-    background:#1c1b1b;
+    background: #1c1b1b;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -77,10 +77,10 @@ button {
     font-weight: 900;
     letter-spacing: 1.5px;
     transition: background-color 0.2s ease-out;
-    
+
     &:hover {
-    background-color: rgb(55, 55, 55);
-    color: white;
+        background-color: rgb(55, 55, 55);
+        color: white;
     }
 }
 
@@ -94,6 +94,7 @@ button {
     border-radius: 12px;
     background: #1c1b1b;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .movie-container {
@@ -102,6 +103,11 @@ button {
     width: 90%;
     height: 100%;
     margin: 10px 0px;
+
+    button {
+        margin: 20px 0px 0px;
+        width: 30%;
+    }
 }
 
 img {
@@ -114,8 +120,13 @@ img {
     }
 }
 
+.plot {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
 @media screen and (min-width: 768px) {
- 
+
     .wrapper {
         width: 80%;
         padding: 30px;
@@ -146,12 +157,12 @@ img {
         flex-direction: row;
         margin: 30px 0px;
         font-family: 'Montserrat', sans-serif;
-  
 
-    button {
-        margin: 0 10px;
+
+        button {
+            margin: 0 10px;
+        }
     }
-}
 
     h1 {
         font-size: 3rem;
