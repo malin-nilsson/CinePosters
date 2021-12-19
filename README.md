@@ -1,5 +1,5 @@
-### movie-posters
+### Movie Poster Search
 Movie Poster Search using OMDb API
 
-## tools
-HTML5, CSS3, JavaScript, TypeScript, Fetch API
+## Tools
+HTML5, CSS3, SASS, JavaScript, TypeScript, Fetch API
