@@ -1,30 +1,14 @@
+import { IMovie } from "./models/IMovie";
+import { Movie } from "./models/Movie";
+import { IOmdbResponse } from "./models/IOmdbResponse";
+
 window.onload = function () {
   document.getElementById("button").addEventListener("click", doSearch)
-}
-
-interface IMovie {
-  Poster: string;
-  Title: string;
-  Year: number;
-  imdbID: string;
-}
-
-interface IOmdbResponse {
-  Search: IMovie[];
-}
-
-class Movie {
-  image: string;
-  title: string;
-  released: number;
-  imdbID: string;
-
-  constructor(imageUrl: string, title: string, year: number, imdb: string) {
-    this.image = imageUrl;
-    this.title = title;
-    this.released = year;
-    this.imdbID = imdb;
-  }
+  document.getElementById("search-text").addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+      doSearch();
+    }
+  })
 }
 
 function doSearch() {
