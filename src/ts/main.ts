@@ -26,26 +26,24 @@ function doSearch() {
         let img: HTMLImageElement = document.createElement("img");
         let heading: HTMLHeadingElement = document.createElement("h3");
         let year: HTMLSpanElement = document.createElement("span");
-        let button: HTMLButtonElement = document.createElement("button");
 
         img.src = movie.Poster;
         heading.innerHTML = movie.Title;
         year.toString();
         year.innerHTML = movie.Year.toString();
-        button.innerHTML = "IMDB Plot";
 
         let container: HTMLDivElement = document.createElement("div");
         img.addEventListener("click", () => {
           handleMovieClick(movie.imdbID);
         })
 
+      
+
         container.classList.add("movie-container");
         container.appendChild(img);
         container.appendChild(heading);
         container.appendChild(year);
-        container.appendChild(button);
 
-        button.addEventListener("click", () => {
           fetch("http://www.omdbapi.com/?i=" + movie.imdbID + "&apikey=416ed51a")
             .then((response) => response.json())
             .then((result) => {
@@ -53,9 +51,8 @@ function doSearch() {
               paragraph.innerHTML = result.Plot;
               paragraph.classList.add("plot");
               container.appendChild(paragraph);
-              button.disabled = true;
             });
-        })
+        
 
         document.getElementById("result").appendChild(container);
 
