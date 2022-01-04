@@ -25,35 +25,40 @@ main {
     margin: 0 auto;
     background: #1c1b1b;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
 
-h1 {
-    font-family: 'Abril Fatface', cursive;
-    color: white;
-    padding: 0px;
-    margin: 0px 0px 10px;
-    font-size: 2rem;
-    text-align: center;
+    h1 {
+        font-family: 'Abril Fatface', cursive;
+        color: white;
+        padding: 0px;
+        margin: 0px 0px 10px;
+        font-size: 3.3rem;
+        line-height: 3.5rem;
+        text-align: center;
+    
+        .fa-film {
+            margin-left: 10px;
+        }
+    }
 
-    .fa-film {
-        margin-left: 10px;
+    p {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 100;
     }
 }
 
-h3 {
-    font-size: 1.5rem;
-    padding: 20px 0px 0px;
-    margin: 0;
-}
+
 
 .search-field {
     justify-content: center;
     display: flex;
     flex-direction: column;
-}
+
 
 input {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
     margin: 0 auto;
     padding: 10px;
     width: 90%;
@@ -84,7 +89,7 @@ button {
         color: white;
     }
 }
-
+}
 
 #result {
     display: flex;
@@ -96,7 +101,7 @@ button {
     background: #1c1b1b;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     font-family: 'Montserrat', sans-serif;
-}
+
 
 .movie-container {
     display: flex;
@@ -105,15 +110,10 @@ button {
     height: 100%;
     margin: 20px 0px 10px;
 
-    button {
-        margin: 20px 0px 0px;
-        width: 30%;
-    }
 }
 
 img {
     width: 100%;
-    max-height: 450px;
     object-fit: contain;
 
     &:hover {
@@ -122,11 +122,16 @@ img {
     }
 }
 
-.plot {
-    font-size: 1rem;
-    line-height: 1.6rem;
+h3 {
+    font-size: 2rem;
+    margin: 5px 0px;
 }
 
+.plot {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+}
 
 @media screen and (min-width: 768px) {
     #result {
@@ -139,20 +144,25 @@ img {
         padding: 20px 50px;
     }
     }
+
+    h3 {
+        font-size: 2rem;
+        margin: 10px 0px 5px;
+    }
 }
 
 @media screen and (min-width: 1100px) {
 
     .wrapper {
-        width: 80%;
+        width: 70%;
         padding: 30px;
     }
 
 
-    input {
+    .search-field input {
         margin-top: 40px;
         width: 60%;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin: 0;
         background-color: #111;
         color: #fff;
@@ -170,13 +180,23 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 80%;
+        width: 70%;
         margin: 30px auto;
         align-items: flex-start;
 
         .movie-container {
-            width: 33%;
-            padding: 20px 10px;
+            width: 50%;
+            padding: 20px 50px;
+        }
+
+        h3 {
+            font-size: 1.7rem;
+            margin: 10px 0px 5px;
+        }
+
+        span {
+            font-size: 1.3rem;
+            font-weight: 100;
         }
     
     }
