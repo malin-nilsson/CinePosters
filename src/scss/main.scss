@@ -4,7 +4,7 @@
 
 html {
     height: 100%;
-    background: #141414;
+    background: #000;
 }
 
 body {
@@ -16,6 +16,11 @@ body {
 
 main {
     padding-top: 40px;
+    background-image: url("../assets/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
 }
 
 .wrapper {
@@ -23,7 +28,7 @@ main {
     padding-top: 20px;
     width: 90%;
     margin: 0 auto;
-    background: #1c1b1b;
+    background-color: #0b0b0b;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
     h1 {
@@ -98,7 +103,7 @@ button {
     align-items: center;
     margin-top: 10px;
     border-radius: 12px;
-    background: #1c1b1b;
+    background-color: #0b0b0b;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     font-family: 'Montserrat', sans-serif;
 
@@ -134,6 +139,11 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+
+    main {
+        height: 100vh;
+    }
+
     #result {
         flex-direction: row;
         flex-wrap: wrap;
@@ -152,6 +162,9 @@ h3 {
 }
 
 @media screen and (min-width: 1100px) {
+    main {
+        height: 100vh;
+    }
 
     .wrapper {
         width: 70%;

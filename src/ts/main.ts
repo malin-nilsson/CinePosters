@@ -3,6 +3,7 @@ import { Movie } from "./models/Movie";
 import { IOmdbResponse } from "./models/IOmdbResponse";
 
 window.onload = function () {
+
   document.getElementById("button").addEventListener("click", doSearch)
   document.getElementById("search-text").addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
@@ -11,8 +12,10 @@ window.onload = function () {
   })
 }
 
+
+
 function doSearch() {
-  let content = document.getElementById("result");
+  let content: HTMLDivElement = document.getElementById("result") as HTMLDivElement;
   content.innerHTML = "";
   
   let inputElement: HTMLInputElement = document.getElementById("search-text") as HTMLInputElement;
