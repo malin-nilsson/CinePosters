@@ -18,7 +18,7 @@ Movie Poster Search using OMDb API
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](src/assets/screenshot.jpg)
 
 
 ### Links
@@ -46,9 +46,6 @@ Movie Poster Search using OMDb API
 ## Author
 
 - GitHub - [malin-nilsson](https://github.com/malin-nilsson)
-
-
-## Acknowledgments
 
 
 
