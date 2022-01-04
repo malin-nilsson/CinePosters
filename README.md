@@ -48,4 +48,9 @@ Movie Poster Search using OMDb API
 - GitHub - [malin-nilsson](https://github.com/malin-nilsson)
 
 
+## Acknowledgments
+Photo by Felix Mooneeram on Unsplash:
+https://unsplash.com/photos/evlkOfkQ5rE
+  
+
 
