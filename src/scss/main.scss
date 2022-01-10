@@ -28,7 +28,7 @@ main {
     padding-top: 20px;
     width: 90%;
     margin: 0 auto;
-    background-color: #0b0b0b;
+    background-color: #000000;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
     h1 {
@@ -36,7 +36,7 @@ main {
         color: white;
         padding: 0px;
         margin: 0px 0px 10px;
-        font-size: 3.3rem;
+        font-size: 2.5rem;
         line-height: 3.5rem;
         text-align: center;
     
@@ -48,7 +48,7 @@ main {
     p {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 100;
     }
 }
@@ -81,7 +81,8 @@ button {
     border-radius: 10px;
     margin: 10px auto;
     cursor: pointer;
-    background-color: rgb(182, 182, 182);
+    background-color: #581313;
+    color: #fff;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: none;
     font-size: 1.1rem;
@@ -90,7 +91,7 @@ button {
     transition: background-color 0.2s ease-out;
 
     &:hover {
-        background-color: rgb(55, 55, 55);
+        background-color: #6c1818;
         color: white;
     }
 }
@@ -167,8 +168,13 @@ h3 {
     }
 
     .wrapper {
-        width: 70%;
+        width: 60%;
         padding: 30px;
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
  
 
     p {
@@ -234,9 +240,6 @@ h3 {
         }
     }
 
-    h1 {
-        font-size: 3rem;
-        text-align: center;
-    }
+   
 }
 
