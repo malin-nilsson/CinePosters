@@ -6,9 +6,17 @@ Movie Poster Search using OMDb API.
 ![](src/assets/screenshot.jpg)
 
 
-## Links
+## Installation
+1. Clone the repo\
+git clone https://github.com/malin-nilsson/movie-posters.git
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+2. Install npm packages\
+npm install
+
+3. Run Parcel\
+npm run build
+
+Visit localhost:1234 to view the project
 
 ## Built with
 
