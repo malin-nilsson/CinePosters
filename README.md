@@ -29,7 +29,7 @@ Visit localhost:1234 to view the project
 - Mobile-first workflow
 
 ## What I learned
-This was my first project using an API. It was a bit intimidating but I also learned a lot of new things. One of the most important things I learned during this project was that – depending on how the data is structured – it can be a little tricky to extract desired data from APIs. I was required to use different fetch requests to access OMDb's data, but I successfully managed to pull a list of movie posters matching a search query.
+This was my first project using an API. It was a bit intimidating but I also learned a lot of new things. One important thing I learned during he project was that it can be a little tricky to extract desired data from APIs, depending on how it's structured. I needed to use different fetch requests to access OMDb's data, but successfully managed to pull a list of movie posters matching a search query.
 
 ## Useful resources
 OMDb API:
