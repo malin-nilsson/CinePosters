@@ -1,4 +1,4 @@
-# Movie Poster Search
+# CinePosters - Movie Poster Search
 Simple movie poster search app that uses the Open Movie Database (OMDB) API to display movie posters corresponding to search. 
 
 ## Screenshot
