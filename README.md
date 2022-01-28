@@ -17,14 +17,11 @@ npm run build
 Visit localhost:1234 to view the project
 
 ## Built with
-- HTML
-- SASS
-- Parcel
-- NPM
+- HTML & SASS
 - TypeScript
-- API
-- Mobile-first workflow
-- 
+- Parcel
+- Fetch API
+
 ## Useful resources
 OMDb API:
 http://www.omdbapi.com/
