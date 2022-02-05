@@ -6,13 +6,13 @@ Simple movie poster search app that uses the Open Movie Database (OMDB) API to d
 
 ## Installation
 1. Clone the repo\
-git clone https://github.com/malin-nilsson/movie-posters.git
+`git clone https://github.com/malin-nilsson/movie-posters.git`
 
 2. Install npm packages\
-npm install
+`npm install`
 
 3. Run Parcel\
-npm run build
+`npm run build`
 
 Visit localhost:1234 to view the project
 
