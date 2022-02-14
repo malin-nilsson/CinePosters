@@ -1,5 +1,7 @@
 # CinePosters - Movie Poster Search
-Simple movie poster search app that uses the Open Movie Database (OMDB) API to display movie posters corresponding to search. 
+Simple movie poster search app that uses the Open Movie Database (OMDB) API to display movie posters corresponding to search.
+
+The goal of this project was to practice fetch API's with Fetch and improve my skills in TypeScript.
 
 ![](src/assets/screenshot.jpg)
 
