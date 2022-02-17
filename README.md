@@ -18,10 +18,10 @@ The goal of this project was to practice using the Fetch API and improving my Ty
 
 Visit localhost:1234 to view the project
 
-## Built with
+## Tools
 - HTML & SASS
 - TypeScript
-- Parcel
+- NPM
 - Fetch API
 
 ## Useful resources
